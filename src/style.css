@@ -1,5 +1,58 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
-}
+body {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'bicycle', serif;
+  }
+  .card {
+    width: 350px;
+    height: 450px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 110px;
+  }
+  .corner {
+    position: absolute;
+    font-size: 95px;
+  }
+
+  .top {
+    top: 10px;
+    left: 30px;
+  }
+  .bottom {
+    bottom: 15px;
+    right: 20px;
+    transform: rotate(180deg);
+  }
+  .suit-hearts, .suit-diamonds {
+    color: red;
+  }
+  .suit-spades, .suit-clubs {
+    color: black;
+  }
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: rgb(253, 22, 22);
+    border: none;
+    cursor: default;
+  }
+  button:hover {
+    background: #faf600;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
